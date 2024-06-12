@@ -1,0 +1,112 @@
+.carousel-item {
+  height: 100vh;
+}
+.carousel-image {
+  height: 100vh; 
+  background-size: contain; 
+  background-repeat: no-repeat;
+}
+
+.image1 {
+  background-image: url(http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider1.jpg);
+}
+
+.image2 {
+  background-image: url(http://sneaker.mallthemes.com/wp-content/uploads/2018/10/home1-slider2.jpg);
+}
+
+.image3 {
+  background-image: url(http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider3-fix.jpg);
+  position: relative;
+}
+.image3_text{
+  position: absolute;
+  top: 25%;
+  right: 820px;
+  h4{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+  }
+  h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 79px;
+
+  }
+  button{
+    margin-top: 10px;
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: calc(0.4s);
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-size: 21px;
+  }
+  button:hover{
+    background-color: red;
+    color: white;
+    border: none;
+  }
+}
+
+.image2_text{
+  position: absolute;
+  top: 25%;
+  right: 820px;
+  h4{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+  }
+  h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 79px;
+
+  }
+  button{
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    transition: calc(0.4s);
+    font-size: 21px;
+  }
+  button:hover{
+    background-color: red;
+    color: white;
+    border: none;
+  }
+}
+
+.image1_text{
+  position: absolute;
+  top: 25%;
+  right: 820px;
+  h4{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+  }
+  h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 79px;
+
+  }
+  button{
+    margin-top: 10px;
+    padding: 12px 25px;
+    border: 1px solid black;
+    transition: calc(0.4s);
+    border-radius: 8px;
+    font-family: "Rubik", sans-serif;
+    font-size: 21px;
+    background-color: transparent;
+  }
+  button:hover{
+    background-color: red;
+    color: white;
+    border: none;
+  }
+}
+
+

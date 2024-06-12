@@ -1,0 +1,130 @@
+.header_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  i {
+    font-size: 30px;
+  }
+  .userr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 12px;
+    gap: 10px;
+    p {
+      color: red;
+    }
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.Header_one {
+  padding: 20px;
+}
+.Logo {
+  img {
+    width: 200px;
+  }
+}
+
+.ınputt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  input {
+    width: 500px;
+    border-radius: none;
+  }
+  button {
+    padding: 15px 25px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+  button:hover {
+    background-color: rgb(182, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+.Header_two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #2f333a;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.Header_left_two {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+.Header_right_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 20px;
+  flex-wrap: wrap;
+  p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    color:  rgb(130, 130, 130);
+  }
+  .iconn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        li{
+            list-style-type: none;
+            color: white;
+            background-color: rgb(95, 95, 95);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            i{
+                color:  rgb(193, 193, 193);
+            }
+        }
+    }
+}
+}
