@@ -1,0 +1,56 @@
+.Section2_card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    border-right: 1px solid rgb(222, 222, 222);
+    padding: 10px;
+}
+.Section2_card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    border-right: 1px solid rgb(222, 222, 222);
+    padding: 10px;
+}
+.Section2_card3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    border-right: 1px solid  rgb(222, 222, 222);
+    padding: 10px;
+}
+.Section2_card4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    border-right: 1px solid rgb(222, 222, 222);
+    padding: 10px;
+}
+.Section2_card5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 10px;
+}
+
+
+.Section2_card_text{
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.Section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+     border: 1px solid rgb(222, 222, 222);
+    margin: 10px;
+}
