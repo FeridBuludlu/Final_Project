@@ -1,0 +1,82 @@
+.Section5 {
+    background-image: url("http://sneaker.mallthemes.com/wp-content/uploads/2018/10/home1-large-banner.jpg?id=885");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+  }
+  
+  .Section5_view {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    top: 30%;
+    left: 23%;
+  }
+  
+  .Section5_view h4 {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .Section5_view h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .Section5_view p {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .advertisement_button {
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.6s, border-color 0.6s;
+  }
+  
+  .advertisement_button:hover {
+    background-color: red;
+    border-color: red;
+  }
+  
+  @media (max-width: 768px) {
+    .Section5_view {
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .Section5_view h2 {
+      font-size: 48px;
+    }
+  
+    .Section5_view p {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Section5_view h2 {
+      font-size: 36px;
+    }
+  
+    .Section5_view p {
+      font-size: 8px;
+    }
+  }
+  

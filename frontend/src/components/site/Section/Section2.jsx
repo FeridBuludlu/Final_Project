@@ -1,56 +1,53 @@
 import React from "react";
-import "./Section2.css"
+import "./Section2.css";
+
 const Section2 = () => {
+  const cards = [
+    {
+      src: "http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon1.png",
+      title: "FREE DELIVERY",
+      description: "Free shipping on all order",
+    },
+    {
+      src: "http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon2.png",
+      title: "ONLINE SUPPORT 24/7",
+      description: "Support online 24 hours a day",
+    },
+    {
+      src: "http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon3.png",
+      title: "MONEY RETURN",
+      description: "Back guarantee under 7 days",
+    },
+    {
+      src: "http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon4.png",
+      title: "MEMBER DISCOUNT",
+      description: "On every order over $120.00",
+    },
+    {
+      src: "http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon5.png",
+      title: "SECURE PAYMENT",
+      description: "All cards accepted",
+    },
+  ];
+
   return (
-    <div className="Section2">
-      <div className="Section2_card1">
-        <img
-          src="http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon1.png"
-          alt=""
-        />
-        <div className="Section2_card_text">
-          <h4>FREE DELIVERY</h4>
-          <p>Free shipping on all order</p>
-        </div>
-      </div>
-      <div className="Section2_card2">
-        <img
-          src="http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon2.png"
-          alt=""
-        />
-        <div className="Section2_card_text">
-          <h4>ONLINE SUPPORT 24/7</h4>
-          <p>Support online 24 hours a day</p>
-        </div>
-      </div>
-      <div className="Section2_card3">
-        <img
-          src="http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon3.png"
-          alt=""
-        />
-        <div className="Section2_card_text">
-          <h4>MONEY RETURN</h4>
-          <p>Back guarantee under 7 days</p>
-        </div>
-      </div>
-      <div className="Section2_card4">
-        <img
-          src="http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon4.png"
-          alt=""
-        />
-        <div className="Section2_card_text">
-          <h4>MEMBER DISCOUNT</h4>
-          <p>Onevery order over $120.00</p>
-        </div>
-      </div>
-      <div className="Section2_card5">
-        <img
-          src="http://sneaker.mallthemes.com/wp-content/uploads/2018/10/policy-icon5.png"
-          alt=""
-        />
-        <div className="Section2_card_text">
-          <h4>SECURE PAYMENT</h4>
-          <p>All cards accepted</p>
+    <div className="container">
+      <div className="row">
+        <div className="Section2 col-12">
+          {cards.map((card, index) => (
+            <div
+              className={`Section2_card ${
+                index !== cards.length - 1 ? "border-right" : ""
+              }`}
+              key={index}
+            >
+              <img src={card.src} alt={card.title} />
+              <div className="Section2_card_text">
+                <h4>{card.title}</h4>
+                <p>{card.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

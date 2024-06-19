@@ -1,0 +1,89 @@
+.Section6 {
+    background: #1d2241 url("http://sneaker.mallthemes.com/wp-content/uploads/2021/08/newsletter-bg.jpg?id=1313");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    position: relative;
+  }
+  
+  .Section6_view {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    top: 30%;
+    left: 23%;
+    text-align: center;
+  }
+  
+  .Section6_view h4 {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .Section6_view h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .Section6_view form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Section6_view form input[type="text"] {
+    width: 600px; 
+    padding: 15px;
+    border: none;
+    border-radius: 5px 0 0 5px; 
+  }
+  
+  .Section6_view form input[type="submit"] {
+    padding: 15px 23px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.5s;
+  }
+  
+  .Section6_view form input[type="submit"]:hover {
+    background-color: rgb(201, 3, 3);
+  }
+  
+  /* Responsiveness Handling */
+  @media (max-width: 768px) {
+    .Section6 {
+      height: 100vh;
+    }
+  
+    .Section6_view {
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .Section6_view h2 {
+      font-size: 28px;
+    }
+  
+    .Section6_view form input[type="text"] {
+      width: 100%;
+      max-width: 300px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Section6_view h2 {
+      font-size: 24px; 
+    }
+  }
+  
