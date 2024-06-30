@@ -1,0 +1,39 @@
+.cards{
+    padding: 30px;
+    border: none;
+    transition: calc(0.9s);
+}
+.cards:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card-body {
+    padding: 10px;
+    p{
+    font-family: "Rubik", sans-serif;
+    }
+    h2{
+    font-family: "Rubik", sans-serif;
+    }
+}
+
+.baskett:hover{
+    background-color: rgb(255, 196, 0);
+}
+.wish{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+
+}
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+    font-family: "Rubik", sans-serif;
+
+    }
+}

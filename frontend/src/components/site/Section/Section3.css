@@ -31,12 +31,17 @@
   .col-12 {
     width: 100%;
     padding: 10px;
+
   }
   
   img {
     width: 100%;
     height: auto;
     display: block;
+    transition: calc(0.4s);
+  }
+  img:hover{
+    padding: 10px;
   }
   
   /* Media Queries for Responsiveness */

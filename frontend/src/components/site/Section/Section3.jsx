@@ -3,7 +3,7 @@ import "./Section3.css";
 
 const Section3 = () => {
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-up">
       <div className="row">
         <div className="col-4">
           <div className="row">

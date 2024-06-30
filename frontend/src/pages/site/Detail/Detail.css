@@ -1,0 +1,44 @@
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    margin: 100px;
+    img{
+        border-radius: 10px;
+        width: 80%;
+    }
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.baskett:hover{
+    background-color: rgb(255, 196, 0);
+}
+.wish{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+
+}
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    button{
+    font-family: "Rubik", sans-serif;
+
+    }
+}

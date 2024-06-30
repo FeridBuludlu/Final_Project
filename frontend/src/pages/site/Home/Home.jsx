@@ -3,8 +3,9 @@ import Section1 from '../../../components/site/Section/Section1'
 import Section2 from '../../../components/site/Section/Section2'
 import Section3 from '../../../components/site/Section/Section3'
 import Section4 from '../../../components/site/Section/Section4'
-import Section5 from '../../../components/site/Section5'
-import Section6 from '../../../components/site/Section6'
+import Section5 from '../../../components/site/Section/Section5'
+import Section6 from '../../../components/site/Section/Section6'
+import Section7 from '../../../components/site/Section/Section7'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Section3/>
       <Section4/>
       <Section5/>
+      <Section7/>
       <Section6/>
     </div>
   )

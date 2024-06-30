@@ -7,6 +7,10 @@ import Add from "../pages/admin/Add/Add";
 import Blog from "../pages/site/Blog/Blog"
 import Contact from "../pages/site/Contact/Contact"
 import About from "../pages/site/About/About"
+import Basket from "../pages/site/Basket/Basket";
+import Wishlist from "../pages/site/Wishlist/Wishlist";
+import Login from "../pages/site/login";
+import Register from "../pages/site/register/register";
 const ROUTES = [
   {
     path: "/",
@@ -36,6 +40,22 @@ const ROUTES = [
         path: "about",
         element: <About/>
       },
+      {
+        path: 'basket',
+        element: <Basket/>
+      },
+      {
+        path: "wishlist",
+        element: <Wishlist/>
+      },
+      {
+        path: "login",
+        element: <Login/>
+      },
+      {
+        path: "register",
+        element: <Register/>
+      }
     ],
   },
   {

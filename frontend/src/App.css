@@ -3,3 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  

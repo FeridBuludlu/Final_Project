@@ -1,8 +1,9 @@
 import React from 'react'
+import Addproduct from '../../../components/admin/Add/Add'
 
 const Add = () => {
   return (
-    <div>Add</div>
+    <div><Addproduct/></div>
   )
 }
 

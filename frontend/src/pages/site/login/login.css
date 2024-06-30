@@ -1,0 +1,72 @@
+.login-container {
+  display: flex;
+  justify-content: space-between; /* Arrange items with space between */
+  max-width: 1200px;
+  margin: 100px auto; /* Adjust margin to center vertically */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Form content */
+.form-content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Form labels */
+.form-content label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+/* Form inputs */
+.form-content input[type="text"],
+.form-content input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px; /* Added spacing between inputs */
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #4a5568;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-content input[type="text"]:focus,
+.form-content input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.5);
+}
+
+/* Submit button */
+.form-content button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #667eea;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-content button[type="submit"]:hover {
+  background-color: #5a67d8;
+}
+
+/* Image container */
+.image-container {
+  flex: 1;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/027/215/182/large_2x/female-model-wearing-mock-up-black-hoodie-with-a-streetwear-logo-on-the-shirt-free-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
