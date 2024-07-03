@@ -3,19 +3,26 @@ import { Formik } from 'formik';
 import axios from 'axios';
 import MainContext from "../../../context/context"
 import "./Addproduct.css"
+import { Helmet } from 'react-helmet';
 
 const Addproduct = () => {
     const {data , setData} = useContext(MainContext)
     return (
         <div className='formik_form'>
+            <Helmet>
+                <title>
+                    Add
+                </title>
+            </Helmet>
             <h1>MƏHSULU DAXİL EDİN!</h1>
             <Formik
-                initialValues={{ title: '',type: '', image: '', price: '', }}
+                initialValues={{ title: '',description: '' ,type: '', image: '', price: '', }}
                 validate={values => {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     axios.post("http://localhost:8080/product",{
                         title: values.title,
+                        description:values.description,
                         image: values.image,
                         price: values.price,
                         type: values.type,
@@ -43,6 +50,15 @@ const Addproduct = () => {
                             value={values.title}
                         />
                         {errors.title && touched.title && errors.title}
+                        <input
+                            type="text"
+                            name="description"
+                            placeholder='description'
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.description}
+                        />
+                        {errors.description && touched.description && errors.description}
                         <input
                             type="text"
                             name="type"

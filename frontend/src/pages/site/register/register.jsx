@@ -18,7 +18,6 @@ const Register = () => {
         password,
       });
 
-      // Save user data to localStorage
       localStorage.setItem("username", response.data.username);
       localStorage.setItem("userId", response.data.userId);
       localStorage.setItem("token", response.data.token);
@@ -89,10 +88,6 @@ const Register = () => {
           </button>
         </div>
       </form>
-
-      <div className="image-container">
-        <img src="https://static.vecteezy.com/system/resources/previews/027/215/182/large_2x/female-model-wearing-mock-up-black-hoodie-with-a-streetwear-logo-on-the-shirt-free-photo.jpg" alt="Registration Image" className="registration-image" />
-      </div>
     </div>
   );
 };

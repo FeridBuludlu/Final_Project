@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -43,7 +44,11 @@ const Footer = () => {
             <li>
               <b>INFORMATION</b>
             </li>
-            <li>About Us</li>
+            <li>
+              <Link className="aa" to="section7" smooth={true} duration={500}>
+                About Us
+              </Link>
+            </li>
             <li>Delivery Information</li>
             <li>Privacy Policy</li>
             <li>Terms & Conditions</li>
@@ -66,7 +71,9 @@ const Footer = () => {
         </div>
         <div className="Footer_div4">
           <ul>
-            <li><b>LATEST POSTS</b></li>
+            <li>
+              <b>LATEST POSTS</b>
+            </li>
             <li>
               <div className="Footer_div4_first">
                 <img
@@ -74,7 +81,9 @@ const Footer = () => {
                   alt=""
                 />
                 <div className="Footer_div4_first_text">
-                  <h4>BLOG IMAGE <br /> POST (STICKY)</h4>
+                  <h4>
+                    BLOG IMAGE <br /> POST (STICKY)
+                  </h4>
                   <p>October 11, 2018</p>
                 </div>
               </div>
@@ -86,7 +95,9 @@ const Footer = () => {
                   alt=""
                 />
                 <div className="Footer_div4_second_text">
-                  <h4>POST WITH <br /> GALLERY</h4>
+                  <h4>
+                    POST WITH <br /> GALLERY
+                  </h4>
                   <p>October 11, 2018</p>
                 </div>
               </div>
@@ -96,7 +107,9 @@ const Footer = () => {
         <div className="Footer_div5">
           <div className="Footer_div5_first">
             <ul>
-              <li><b>GET İN TOUCH</b></li>
+              <li>
+                <b>GET İN TOUCH</b>
+              </li>
               <li>Address: 123 Main Street, Anytown, CA 12345 – USA.</li>
               <li>Telephone Enquiry: (012) 800 456 789-987</li>
               <li>Email: Contact@plazathemes.com</li>
@@ -104,7 +117,9 @@ const Footer = () => {
           </div>
           <div className="Footer_div5_second">
             <ul>
-              <li><b>OPENİNG TİME</b></li>
+              <li>
+                <b>OPENİNG TİME</b>
+              </li>
               <li>Open: 8:00 AM – Close: 18:00 PM</li>
               <li>Saturday – Sunday: Close</li>
             </ul>
@@ -119,4 +134,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

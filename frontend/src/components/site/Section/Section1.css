@@ -19,32 +19,63 @@
   background-image: url("http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider3-fix.jpg");
   position: relative;
 }
-.image3_text, .image2_text, .image1_text {
+.image3_text,
+.image2_text,
+.image1_text {
   position: absolute;
   top: 25%;
   right: 820px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.image3_text h4, .image2_text h4, .image1_text h4,
-.image3_text h2, .image2_text h2, .image1_text h2 {
+.image3_text h4,
+.image2_text h4,
+.image1_text h4,
+.image3_text h2,
+.image2_text h2,
+.image1_text h2 {
   font-family: "Rubik", sans-serif;
 }
-.image3_text h4, .image2_text h4, .image1_text h4 {
+.image3_text h4,
+.image2_text h4,
+.image1_text h4 {
   font-size: 24px;
 }
-.image3_text h2, .image2_text h2, .image1_text h2 {
+.image3_text h2,
+.image2_text h2,
+.image1_text h2 {
   font-size: 79px;
 }
-.image3_text button, .image2_text button, .image1_text button {
+.image3_text .aa,
+.image2_text .aa,
+.image1_text .aa {
   margin-top: 10px;
   padding: 12px 25px;
+  width: 200px;
   border: 1px solid black;
   border-radius: 8px;
   background-color: transparent;
   font-family: "Rubik", sans-serif;
   font-size: 21px;
+  color: black;
+  text-decoration: none;
   transition-duration: 0.4s;
 }
-.image3_text button:hover, .image2_text button:hover, .image1_text button:hover {
+
+.image3_text .aa:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.image2_text .aa:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.image1_text .aa:hover {
   background-color: red;
   color: white;
   border: none;

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./Contact.css";
+import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
+import withReactContent from "sweetalert2-react-content";
+import sendEmail from "../../../components/site/Contact/EmailJs";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,10 +23,22 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const templateParams = {
+      to_name: "Recipient Name",
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
     try {
-      const response = await axios.post("/api/send-email", formData);
-      console.log("Email sent successfully:", response.data);
-      alert("Message sent successfully!");
+      await sendEmail(templateParams);
+      const MySwal = withReactContent(Swal);
+      await MySwal.fire({
+        title: "Message Sent Successfully!",
+        text: "We have received your message.",
+        icon: "success",
+      });
       setFormData({
         name: "",
         email: "",
@@ -30,12 +46,20 @@ const Contact = () => {
       });
     } catch (error) {
       console.error("Failed to send email:", error);
-      alert("Failed to send message. Please try again later.");
+      const MySwal = withReactContent(Swal);
+      await MySwal.fire({
+        title: "Error",
+        text: "Failed to send message. Please try again later.",
+        icon: "error",
+      });
     }
   };
 
   return (
     <div>
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <div className="map">
         <div className="container">
           <div className="row">

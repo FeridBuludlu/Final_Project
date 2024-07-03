@@ -11,6 +11,7 @@ app.use(cors())
 
 const productSchema = new mongoose.Schema({
     title: String,
+    description:String,
     type: String,
     image: String,
     price: Number,
@@ -30,8 +31,8 @@ app.get("/product/:id", async (req, res) => {
 })
 
 app.post("/product", async (req, res) => {
-    const { title, type, price, image } = req.body;
-    const newProduct = new productModel({ title, type, price, image });
+    const { title,description, type, price, image } = req.body;
+    const newProduct = new productModel({ title,description, type, price, image });
     await newProduct.save();
     res.status(201).send("Item created");
 })
@@ -45,8 +46,8 @@ app.delete("/product/:id", async (req, res) => {
 
 app.put("/product/:id", async (req, res) => {
     const { id } = req.params
-    const { title, type, price, image, } = req.body
-    await productModel.findByIdAndUpdate(id, { title, type, price, image})
+    const { title,description, type, price, image, } = req.body
+    await productModel.findByIdAndUpdate(id, { title,description, type, price, image})
     res.send("Item updated")
 })
 

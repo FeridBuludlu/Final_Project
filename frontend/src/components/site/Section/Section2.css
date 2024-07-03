@@ -22,8 +22,8 @@
 }
 
 .Section2_card img {
-  width: 40px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .Section2_card_text {
@@ -34,13 +34,12 @@
 }
 
 .Section2_card_text h4 {
-  margin: 0;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .Section2_card_text p {
   margin: 5px 0 0;
-  font-size: 14px;
+  font-size: 12px;
   color: #777;
 }
 
@@ -76,25 +75,25 @@
 
 @keyframes flip-vertical-right {
   0% {
-    transform: perspective(400px) rotateY(0);
+    transform:  rotateY(0);
   }
   100% {
-    transform: perspective(400px) rotateY(180deg);
+    transform:  rotateY(180deg);
   }
 }
 
 @-webkit-keyframes flip-vertical-right {
   0% {
-    -webkit-transform: perspective(400px) rotateY(0);
-    transform: perspective(400px) rotateY(0);
+    -webkit-transform:  rotateY(0);
+    transform:  rotateY(0);
   }
   100% {
-    -webkit-transform: perspective(400px) rotateY(180deg);
-    transform: perspective(400px) rotateY(180deg);
+    -webkit-transform:  rotateY(180deg);
+    transform: rotateY(180deg);
   }
 }
 
 .Section2_card img:hover {
-  animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  -webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-vertical-right 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: flip-vertical-right 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }

@@ -2,16 +2,19 @@
   width: 800px;
   margin-top: 50px;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .formik_form h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
 }
 
 .formik_form form {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding: 20px;
 }
@@ -22,11 +25,14 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  font-family: "Rubik", sans-serif;
+
 }
 
 .formik_form button {
   padding: 20px;
   background-color: #007bff;
+  width: 560px;
   color: #fff;
   border: none;
   border-radius: 5px;

@@ -1,9 +1,9 @@
-import axios from "axios";
 import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import "./Detail.css";
 import { Helmet } from "react-helmet";
 import MainContext from "../../../context/context";
+import axios from "axios";
 
 function Detail() {
   const { id } = useParams();
@@ -29,8 +29,9 @@ function Detail() {
             </div>
             <div className="col-6 text">
               <h3>{data.title}</h3>
-              <h3>{data.price}$</h3>
               <h3>{data.type}</h3>
+              <h4>{data.description}</h4>
+              <h3>PRICE : {data.price}$</h3>
               <div className="card-footer">
                 <button
                   className="btn btn-warning btn-add-to-cart baskett"

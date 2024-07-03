@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Section1.css"; // Import your CSS file if it contains additional styles
+import { Link } from "react-scroll";
 
 function Section1() {
   useEffect(() => {
@@ -23,7 +24,7 @@ function Section1() {
                 <h4>TOP JACKET OF SNEAKER</h4>
                 <h2>NEW JACKETS</h2>
                 <h4>Aurora Shell Jacket is Ready For Any Adventure</h4>
-                <button>Shopping Now</button>
+                <Link className="aa" to="section4" smooth={true} duration={500}>Shopping Now</Link>
               </div>
             </div>
           </div>
@@ -33,8 +34,7 @@ function Section1() {
                 <h4>TOP JACKET OF SNEAKER</h4>
                 <h2>NEW JACKETS</h2>
                 <h4>Aurora Shell Jacket is Ready For Any Adventure</h4>
-                <button>Shopping Now</button>
-              </div>
+                <Link className="aa" to="section4" smooth={true} duration={500}>Shopping Now</Link>              </div>
             </div>
           </div>
           <div className="carousel-item">
@@ -43,8 +43,7 @@ function Section1() {
                 <h4>TOP JACKET OF SNEAKER</h4>
                 <h2>NEW JACKETS</h2>
                 <h4>Aurora Shell Jacket is Ready For Any Adventure</h4>
-                <button>Shopping Now</button>
-              </div>
+                <Link className="aa" to="section4" smooth={true} duration={500}>Shopping Now</Link>              </div>
             </div>
           </div>
         </div>

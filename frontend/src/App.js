@@ -57,21 +57,25 @@ function App() {
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
   }, [wishlist]);
 
+  useEffect(() => {
+    localStorage.setItem("heart", JSON.stringify(heart));
+  }, [heart]);
+
   function deleteFromBasket(id) {
-    let target = basket.find((x) => x._id == id);
+    let target = basket.find((x) => x._id === id);
     if (target.count > 1) {
       target.count -= 1;
       target.totalPrice -= target.price;
       setBasket([...basket]);
     } else {
-      setBasket([...basket.filter((x) => x._id != id)]);
+      setBasket(basket.filter((x) => x._id !== id));
     }
   }
 
   function addToBasket(id) {
-    let basketItem = basket.find((x) => x._id == id);
+    let basketItem = basket.find((x) => x._id === id);
     if (!basketItem) {
-      let target = data.find((x) => x._id == id);
+      let target = data.find((x) => x._id === id);
       let newItem = {
         ...target,
         count: 1,
@@ -86,23 +90,23 @@ function App() {
   }
 
   function addToWishlist(item) {
-    const isItemInWishlist = wishlist.find((x) => x.id === item.id);
+    const isItemInWishlist = wishlist.find((x) => x._id === item._id);
     if (isItemInWishlist) {
-      const newWishlist = wishlist.filter((x) => x.id !== item.id);
-      setWishlist(newWishlist);
+      setWishlist(wishlist.filter((x) => x._id !== item._id));
     } else {
-      setWishlist([...wishlist, { ...item }]);
+      setWishlist([...wishlist, item]);
     }
-    const isItemInHeartList = heart.includes(item.id);
+
+    const isItemInHeartList = heart.includes(item._id);
     if (isItemInHeartList) {
-      setHeart(heart.filter((id) => id !== item.id));
+      setHeart(heart.filter((id) => id !== item._id));
     } else {
-      setHeart([...heart, item.id]);
+      setHeart([...heart, item._id]);
     }
   }
 
   function deleteFromWishlist(id) {
-    setWishlist([...wishlist.filter((x) => x._id != id)]);
+    setWishlist(wishlist.filter((x) => x._id !== id));
   }
 
   const contextData = {

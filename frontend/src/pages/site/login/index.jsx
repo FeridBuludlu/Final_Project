@@ -1,9 +1,9 @@
 import axios from "axios";
-import React, { useContext, useState } from "react";
+import React, { useContext, useState} from "react";
 import { useNavigate } from "react-router";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { jwtDecode } from "jwt-decode";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { jwtDecode } from "jwt-decode"; // Import jwtDecode by name
 import MainContext from "../../../context/context";
 import "./login.css";
 
@@ -21,7 +21,7 @@ const Login = () => {
         password,
       });
       localStorage.setItem("token", response.data.token);
-      const decoded = jwtDecode(response.data.token);
+      const decoded = jwtDecode(response.data.token); // Decode the token correctly
       localStorage.setItem("role", decoded.role);
       localStorage.setItem("userId", decoded.userId);
       localStorage.setItem("email", decoded.email);
@@ -29,9 +29,10 @@ const Login = () => {
       setUserId(decoded.userId);
       setToken(response.data.token);
 
-      toast.success("You are logged in!"); // Display toast notification
+      toast.success("You are logged in!"); // Display success toast notification
       navigate("/");
     } catch (err) {
+      toast.error("Login failed! Please check your credentials."); // Display error toast notification
       console.log(err.message);
     }
   }
@@ -42,7 +43,10 @@ const Login = () => {
       <div className="form-content">
         <form className="space-y-6" onSubmit={handleLogin}>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
               Email
             </label>
             <div className="mt-2">
@@ -61,7 +65,10 @@ const Login = () => {
 
           <div>
             <div className="flex items-center justify-between">
-              <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Password
               </label>
             </div>
@@ -88,7 +95,6 @@ const Login = () => {
           </div>
         </form>
       </div>
-      <div className="image-container"></div>
     </div>
   );
 };

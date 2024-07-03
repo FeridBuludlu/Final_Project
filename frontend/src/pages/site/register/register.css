@@ -2,7 +2,7 @@
 .register-container {
   display: flex;
   justify-content: space-between; /* Arrange items with space between */
-  max-width: 1200px;
+  max-width: 500px;
   margin: 100px auto; /* Adjust margin to center vertically */
   background-color: #ffffff;
   border-radius: 8px;
@@ -27,7 +27,7 @@
 
 /* Form input fields */
 .input-field {
-  width: 100%;
+  width: 100% !important;
   padding: 12px;
   margin-bottom: 15px; /* Added spacing between inputs */
   border: 1px solid #cbd5e0;
@@ -61,20 +61,4 @@
   background-color: #5a67d8;
 }
 
-/* Image container */
-.image-container {
-  flex: 1;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/027/215/182/large_2x/female-model-wearing-mock-up-black-hoodie-with-a-streetwear-logo-on-the-shirt-free-photo.jpg');
-  background-size: cover;
-  background-position: center;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
 
-.registration-image {
-  width: 100%; /* Adjust image width as needed */
-  height: 100%; /* Ensure image fills its container */
-  object-fit: cover; /* Maintain aspect ratio */
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}

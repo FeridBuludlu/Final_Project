@@ -6,6 +6,10 @@
     justify-content: center;
     padding: 20px;
 }
+.aa{
+  text-decoration: none;
+  color: #999999;
+}
 .Footer_div1 {
   display: flex;
   justify-content: center;

@@ -14,26 +14,6 @@
   width: 150px;
 }
 
-.Header_middle ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.Header_middle ul li {
-  list-style-type: none;
-}
-
-.Header_middle ul li a {
-  text-decoration: none;
-  color: #000;
-  font-family: "Rubik", sans-serif;
-  font-size: 17px;
-}
-
 .header_right {
   display: flex;
   align-items: center;
@@ -97,10 +77,6 @@
     width: 100px; /* Adjust logo size */
   }
 
-  .Header_middle ul {
-    flex-direction: column; /* Stack navigation links vertically */
-    text-align: center; /* Center text */
-  }
 
   .header_right {
     flex-direction: column; /* Stack user info and icons vertically */
@@ -113,15 +89,18 @@
 }
 
 .logout-button {
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   padding: 5px 10px;
-  background-color: #f44336;
+  background-color: #ffffff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  i{
+    color: white;
+  }
 }
 
-.logout-button:hover {
-  background-color: #d32f2f;
-}

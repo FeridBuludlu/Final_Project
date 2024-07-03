@@ -1,28 +1,27 @@
-import Shop from "../pages/site/Shop/Shop";
 import Detail from "../pages/site/Detail/Detail";
 import Home from "../pages/site/Home/Home";
 import Siteroot from "../pages/site/SiteRoot";
-import Adminroot from "../pages/admin/AdminRoot"
+import Adminroot from "../pages/admin/AdminRoot";
 import Add from "../pages/admin/Add/Add";
-import Blog from "../pages/site/Blog/Blog"
-import Contact from "../pages/site/Contact/Contact"
-import About from "../pages/site/About/About"
+import Blog from "../pages/site/Blog/Blog";
+import Contact from "../pages/site/Contact/Contact";
 import Basket from "../pages/site/Basket/Basket";
 import Wishlist from "../pages/site/Wishlist/Wishlist";
 import Login from "../pages/site/login";
 import Register from "../pages/site/register/register";
+import ScrollToHead from "../components/ScrolltoHead";
 const ROUTES = [
   {
     path: "/",
-    element: <Siteroot/>,
+    element: (
+      <ScrollToHead>
+        <Siteroot />
+      </ScrollToHead>
+    ),
     children: [
       {
         path: "",
         element: <Home />,
-      },
-      {
-        path: "shop",
-        element: <Shop />,
       },
       {
         path: "detail/:id",
@@ -30,41 +29,37 @@ const ROUTES = [
       },
       {
         path: "contact",
-        element: <Contact/>,
+        element: <Contact />,
       },
       {
         path: "blog",
-        element: <Blog/>,
+        element: <Blog />,
       },
       {
-        path: "about",
-        element: <About/>
-      },
-      {
-        path: 'basket',
-        element: <Basket/>
+        path: "basket",
+        element: <Basket />,
       },
       {
         path: "wishlist",
-        element: <Wishlist/>
+        element: <Wishlist />,
       },
       {
         path: "login",
-        element: <Login/>
+        element: <Login />,
       },
       {
         path: "register",
-        element: <Register/>
-      }
+        element: <Register />,
+      },
     ],
   },
   {
     path: "/admin",
-    element: <Adminroot/>,
+    element: <Adminroot />,
     children: [
       {
         path: "",
-        element: <Add/>,
+        element: <Add />,
       },
     ],
   },

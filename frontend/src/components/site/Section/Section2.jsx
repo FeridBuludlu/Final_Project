@@ -3,7 +3,7 @@ import "./Section2.css";
 
 const Section2 = () => {
   return (
-    <div className="container" data-aos="fade-up">
+    <div className="container">
       <div className="row">
         <div className="Section2 col-12">
           <div className="Section2_card border-right">
